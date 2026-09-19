@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const About = () => {
   return (
-    <div className="bg-white">
+    <div className="bg-white overflow-x-hidden w-full">
       <section className="max-w-7xl mx-auto px-4 py-12 md:py-20 text-center">
         <h1 className="text-4xl md:text-5xl font-bold">
           About <span className="text-blue-600">ShopHub</span>
@@ -14,7 +14,8 @@ const About = () => {
         </p>
       </section>
 
-      <section className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center pb-16">
+      
+      <section className="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center pb-16">
         <img
           src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600"
           alt="Our Story"
@@ -58,7 +59,6 @@ const About = () => {
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-
             <div className="bg-white p-8 rounded-2xl shadow-sm">
               <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-xl mb-4">
                 ✔
@@ -90,7 +90,6 @@ const About = () => {
                 24/7 support team ready to help you with any question or return.
               </p>
             </div>
-
           </div>
         </div>
       </section>
