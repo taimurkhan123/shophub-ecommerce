@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <div className="bg-white">
+    <div className="bg-white overflow-x-hidden w-full">
       <section className="max-w-7xl mx-auto px-4 py-10 md:py-20">
         <div className="grid md:grid-cols-2 gap-10 items-center">
           <div className="text-center md:text-left">
@@ -37,42 +37,45 @@ const Home = () => {
               </Link>
             </div>
 
-            <div className="mt-10 flex gap-8 justify-center md:justify-start">
-              <div className="bg-white p-6 rounded-2xl text-center hover:shadow-md hover:-translate-y-1 transition duration-300">
-                <h3 className="text-2xl font-bold">190+</h3>
-                <p className="text-gray-500 text-sm">Products</p>
+            
+            <div className="mt-10 flex flex-wrap gap-3 sm:gap-6 justify-center md:justify-start">
+              <div className="bg-white p-4 sm:p-6 rounded-2xl text-center hover:shadow-md hover:-translate-y-1 transition duration-300">
+                <h3 className="text-xl sm:text-2xl font-bold">190+</h3>
+                <p className="text-gray-500 text-xs sm:text-sm">Products</p>
               </div>
 
-              <div className="bg-white p-6 rounded-2xl text-center hover:shadow-md hover:-translate-y-1 transition duration-300">
-                <h3 className="text-2xl font-bold">10k+</h3>
-                <p className="text-gray-500 text-sm">Customers</p>
+              <div className="bg-white p-4 sm:p-6 rounded-2xl text-center hover:shadow-md hover:-translate-y-1 transition duration-300">
+                <h3 className="text-xl sm:text-2xl font-bold">10k+</h3>
+                <p className="text-gray-500 text-xs sm:text-sm">Customers</p>
               </div>
 
-              <div className="bg-white p-6 rounded-2xl text-center hover:shadow-md hover:-translate-y-1 transition duration-300">
-                <h3 className="text-2xl font-bold">4.8⭐</h3>
-                <p className="text-gray-500 text-sm">Rating</p>
+              <div className="bg-white p-4 sm:p-6 rounded-2xl text-center hover:shadow-md hover:-translate-y-1 transition duration-300">
+                <h3 className="text-xl sm:text-2xl font-bold">4.8⭐</h3>
+                <p className="text-gray-500 text-xs sm:text-sm">Rating</p>
               </div>
             </div>
           </div>
 
-          <div className="relative">
+     
+          <div className="relative w-full">
             <img
               src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600"
               alt="shopping"
               className="rounded-3xl w-full h-[400px] md:h-[500px] object-cover"
             />
 
-            <div className="absolute -bottom-6 -left-2 md:-left-6 bg-white shadow-xl rounded-2xl p-4 flex items-center gap-3">
+    
+            <div className="absolute bottom-3 left-3 right-3 sm:right-auto md:-bottom-6 md:-left-6 bg-white shadow-xl rounded-2xl p-3 md:p-4 flex items-center gap-3">
               <img
                 src="https://cdn.dummyjson.com/products/images/beauty/Essence%20Mascara%20Lash%20Princess/1.png"
                 alt=""
-                className="w-12 h-12 rounded-lg bg-gray-100"
+                className="w-10 h-10 md:w-12 md:h-12 rounded-lg bg-gray-100 flex-shrink-0"
               />
-              <div>
-                <p className="font-semibold text-sm">Best Seller</p>
-                <p className="text-xs text-gray-500">2.5k+ Sold Today</p>
+              <div className="min-w-0">
+                <p className="font-semibold text-sm truncate">Best Seller</p>
+                <p className="text-xs text-gray-500 truncate">2.5k+ Sold Today</p>
               </div>
-              <span className="ml-2 text-gray-600 font-bold">$9.99</span>
+              <span className="ml-auto text-gray-600 font-bold flex-shrink-0">$9.99</span>
             </div>
           </div>
         </div>
@@ -80,7 +83,6 @@ const Home = () => {
 
       <section className="bg-gray-50 py-12">
         <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-6">
-
           <div className="bg-white p-6 rounded-2xl text-center hover:shadow-md hover:-translate-y-1 transition duration-300">
             <div className="text-3xl mb-3">🚚</div>
             <h3 className="font-semibold">Free delivery</h3>
@@ -98,7 +100,6 @@ const Home = () => {
             <h3 className="font-semibold">Secure Payment</h3>
             <p className="text-sm text-gray-500 mt-1">100% secure checkout</p>
           </div>
-
         </div>
       </section>
     </div>
